@@ -1,7 +1,7 @@
 Omeglond3D
 ------
 
-3D Engine, create from 2006 to 2009.
+3D Engine, created from 2006 to 2009.
 
 Student project, out of date.
 
