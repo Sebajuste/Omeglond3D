@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OMGLDemoWin32" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\OMGLDemoWin32" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_OMGL3D_EXPORTS" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsfml-system" />
+					<Add option="-lsfml-window" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\OMGLDemoWin32" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-D_OMGL3D_EXPORTS" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lsfml-system" />
+					<Add option="-lsfml-window" />
+				</Linker>
+			</Target>
+			<Target title="lib win32 Debug">
+				<Option platforms="Windows;" />
+				<Option output="Omeglond3D" prefix_auto="1" extension_auto="1" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_OMGL3D_EXPORTS" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+		</Linker>
+		<Unit filename="CAnimatedModelDemo.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="CAnimatedModelDemo.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="CParallaxDemo.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="CParallaxDemo.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="CShadowAreaDemo.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="CShadowAreaDemo.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="CTowerDemo.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="CTowerDemo.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="IDemo.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="main.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="sources\Core\CBufferBase.cpp" />
+		<Unit filename="sources\Core\CBufferBase.hpp" />
+		<Unit filename="sources\Core\CColor.cpp" />
+		<Unit filename="sources\Core\CColor.hpp" />
+		<Unit filename="sources\Core\CCubeMap.cpp" />
+		<Unit filename="sources\Core\CCubeMap.hpp" />
+		<Unit filename="sources\Core\CDeclaration.cpp" />
+		<Unit filename="sources\Core\CDeclaration.hpp" />
+		<Unit filename="sources\Core\CDevice.cpp" />
+		<Unit filename="sources\Core\CDevice.hpp" />
+		<Unit filename="sources\Core\CFrameBufferRender.cpp" />
+		<Unit filename="sources\Core\CFrameBufferRender.hpp" />
+		<Unit filename="sources\Core\CLight.cpp" />
+		<Unit filename="sources\Core\CLight.hpp" />
+		<Unit filename="sources\Core\CMediaManager.cpp" />
+		<Unit filename="sources\Core\CMediaManager.hpp" />
+		<Unit filename="sources\Core\CMesh.cpp" />
+		<Unit filename="sources\Core\CMesh.hpp" />
+		<Unit filename="sources\Core\CPicture.cpp" />
+		<Unit filename="sources\Core\CPicture.hpp" />
+		<Unit filename="sources\Core\CResource.cpp" />
+		<Unit filename="sources\Core\CResource.hpp" />
+		<Unit filename="sources\Core\CResourceManager.cpp" />
+		<Unit filename="sources\Core\CResourceManager.hpp" />
+		<Unit filename="sources\Core\CShader.cpp" />
+		<Unit filename="sources\Core\CShader.hpp" />
+		<Unit filename="sources\Core\CShaderBase.cpp" />
+		<Unit filename="sources\Core\CShaderBase.hpp" />
+		<Unit filename="sources\Core\CTexture.cpp" />
+		<Unit filename="sources\Core\CTexture.hpp" />
+		<Unit filename="sources\Core\CVideoDriver.cpp" />
+		<Unit filename="sources\Core\CVideoDriver.hpp" />
+		<Unit filename="sources\Core\ECoreEnum.hpp" />
+		<Unit filename="sources\Core\IBufferBase.hpp" />
+		<Unit filename="sources\Core\IColorBuffer.hpp" />
+		<Unit filename="sources\Core\ICubeMap.hpp" />
+		<Unit filename="sources\Core\IDeclaration.hpp" />
+		<Unit filename="sources\Core\IDepthBuffer.hpp" />
+		<Unit filename="sources\Core\IFrameBuffer.hpp" />
+		<Unit filename="sources\Core\IFrameBufferRender.hpp" />
+		<Unit filename="sources\Core\ILight.hpp" />
+		<Unit filename="sources\Core\IMesh.hpp" />
+		<Unit filename="sources\Core\IResource.hpp" />
+		<Unit filename="sources\Core\IShader.hpp" />
+		<Unit filename="sources\Core\IShaderBase.hpp" />
+		<Unit filename="sources\Core\ITexture.hpp" />
+		<Unit filename="sources\Core\IVideoDriver.hpp" />
+		<Unit filename="sources\Debug\DebugAllocation.hpp" />
+		<Unit filename="sources\Debug\MemoryManager.cpp" />
+		<Unit filename="sources\Debug\MemoryManager.hpp" />
+		<Unit filename="sources\Exception\LoadException.hpp" />
+		<Unit filename="sources\Exception\OmglException.cpp" />
+		<Unit filename="sources\Exception\OmglException.hpp" />
+		<Unit filename="sources\Exception\PointerNullException.hpp" />
+		<Unit filename="sources\Exception\ReadException.hpp" />
+		<Unit filename="sources\Exception\RenderException.hpp" />
+		<Unit filename="sources\Exception\SaveException.hpp" />
+		<Unit filename="sources\Exception\WriteException.hpp" />
+		<Unit filename="sources\Font\IFont.hpp" />
+		<Unit filename="sources\Interface\CComponent.cpp" />
+		<Unit filename="sources\Interface\CComponent.hpp" />
+		<Unit filename="sources\Interface\CFrame.cpp" />
+		<Unit filename="sources\Interface\CFrame.hpp" />
+		<Unit filename="sources\Interface\CImage.cpp" />
+		<Unit filename="sources\Interface\CImage.hpp" />
+		<Unit filename="sources\Interface\CInterfaceManager.cpp" />
+		<Unit filename="sources\Interface\CInterfaceManager.hpp" />
+		<Unit filename="sources\Interface\CLabel.cpp" />
+		<Unit filename="sources\Interface\CLabel.hpp" />
+		<Unit filename="sources\Interface\IEvent.hpp" />
+		<Unit filename="sources\Math\Matrix4.hpp" />
+		<Unit filename="sources\Math\Quaternion.hpp" />
+		<Unit filename="sources\Math\Vector3.hpp" />
+		<Unit filename="sources\Model\CFrameModel.cpp" />
+		<Unit filename="sources\Model\CFrameModel.hpp" />
+		<Unit filename="sources\Model\CStaticModel.cpp" />
+		<Unit filename="sources\Model\CStaticModel.hpp" />
+		<Unit filename="sources\Model\IFrameModel.hpp" />
+		<Unit filename="sources\Model\IModel.hpp" />
+		<Unit filename="sources\Model\IStaticModel.hpp" />
+		<Unit filename="sources\Omgl3D.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLBlendingParameter.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLBlendingParameter.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLBufferVertex.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLBufferVertex.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLBufferVertexObject.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLColorBuffer.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLColorBuffer.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLCubeMap.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLCubeMap.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLDeclaration.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLDeclaration.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLDepthBuffer.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLDepthBuffer.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLDevice.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLDevice.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLEnumerations.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLExtention.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLExtention.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLFontSystem.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLFontSystem.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLFrameBufferObject.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLFrameBufferObject.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLLight.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLLight.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLMeshDirectMode.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLMeshDirectMode.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLMeshVertexArray.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLMeshVertexArray.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLMeshVertexBufferObject.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLMeshVertexBufferObject.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLShaderBaseGLSL.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLShaderBaseGLSL.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLShaderGLSL.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLShaderGLSL.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLTexture.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLTexture.hpp" />
+		<Unit filename="sources\Render\Ogl\OGLVideoDriver.cpp" />
+		<Unit filename="sources\Render\Ogl\OGLVideoDriver.hpp" />
+		<Unit filename="sources\Scene\CCameraNode.cpp" />
+		<Unit filename="sources\Scene\CCameraNode.hpp" />
+		<Unit filename="sources\Scene\CModelNode.cpp" />
+		<Unit filename="sources\Scene\CModelNode.hpp" />
+		<Unit filename="sources\Scene\CNode.cpp" />
+		<Unit filename="sources\Scene\CNode.hpp" />
+		<Unit filename="sources\Scene\CScene.cpp" />
+		<Unit filename="sources\Scene\CScene.hpp" />
+		<Unit filename="sources\Scene\CStaticModelNode.cpp" />
+		<Unit filename="sources\Scene\CStaticModelNode.hpp" />
+		<Unit filename="sources\Utils\Export.hpp" />
+		<Unit filename="sources\Utils\Loader\CBufferOperation.cpp" />
+		<Unit filename="sources\Utils\Loader\CBufferOperation.hpp" />
+		<Unit filename="sources\Utils\Loader\ILoader.hpp" />
+		<Unit filename="sources\Utils\Loader\Model\CObjLoader.cpp" />
+		<Unit filename="sources\Utils\Loader\Model\CObjLoader.hpp" />
+		<Unit filename="sources\Utils\Loader\Picture\BmpLoader.cpp" />
+		<Unit filename="sources\Utils\Loader\Picture\BmpLoader.hpp" />
+		<Unit filename="sources\Utils\Loader\Picture\TgaLoader.cpp" />
+		<Unit filename="sources\Utils\Loader\Picture\TgaLoader.hpp" />
+		<Unit filename="sources\Utils\Loader\Shader\CShaderLoader.cpp" />
+		<Unit filename="sources\Utils\Loader\Shader\CShaderLoader.hpp" />
+		<Unit filename="sources\Utils\Logger\CLoggerDebug.cpp" />
+		<Unit filename="sources\Utils\Logger\CLoggerDebug.hpp" />
+		<Unit filename="sources\Utils\Logger\CLoggerFile.cpp" />
+		<Unit filename="sources\Utils\Logger\CLoggerFile.hpp" />
+		<Unit filename="sources\Utils\Logger\ILogger.cpp" />
+		<Unit filename="sources\Utils\Logger\ILogger.hpp" />
+		<Unit filename="sources\Utils\Pattern\GenHierarchy.hpp" />
+		<Unit filename="sources\Utils\Pattern\Singleton.hpp" />
+		<Unit filename="sources\Utils\Plugin\CPlugin.cpp" />
+		<Unit filename="sources\Utils\Plugin\CPlugin.hpp" />
+		<Unit filename="sources\Utils\Prefab\CCube.cpp" />
+		<Unit filename="sources\Utils\Prefab\CCube.hpp" />
+		<Unit filename="sources\Utils\Prefab\CSquare.cpp" />
+		<Unit filename="sources\Utils\Prefab\CSquare.hpp" />
+		<Unit filename="sources\Utils\Ptr\PolicyPtr.hpp" />
+		<Unit filename="sources\Utils\Ptr\SmartPtr.hpp" />
+		<Unit filename="sources\Utils\Reader\CBuffer.cpp" />
+		<Unit filename="sources\Utils\Reader\CBuffer.hpp" />
+		<Unit filename="sources\Utils\Reader\CFile.cpp" />
+		<Unit filename="sources\Utils\Reader\CFile.hpp" />
+		<Unit filename="sources\Utils\Reader\CFileReader.cpp" />
+		<Unit filename="sources\Utils\Reader\CFileReader.hpp" />
+		<Unit filename="sources\Utils\Reader\IReader.hpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

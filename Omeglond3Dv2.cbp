@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Omeglond3D" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux Debug">
+				<Option output="bin\Debug\linux\libOmeglond3D-d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\linux\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="GLU" />
+				</Linker>
+			</Target>
+			<Target title="Linux Release">
+				<Option output="bin\Release\linux\libOmeglond3D" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\linux\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="GL" />
+					<Add library="GLU" />
+				</Linker>
+			</Target>
+			<Target title="Linux Test">
+				<Option output="bin\Debug\linux\Omeglond3D" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\linux\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-rdynamic" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsfml-system" />
+					<Add option="-lsfml-window" />
+					<Add option="-lX11" />
+					<Add library="GL" />
+					<Add library="GLU" />
+				</Linker>
+			</Target>
+			<Target title="win32 Debug">
+				<Option platforms="Windows;" />
+				<Option output="bin\Debug\win32\Omeglond3D-d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\win32\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="win32 Release">
+				<Option platforms="Windows;" />
+				<Option output="bin\Release\win32\Omeglond3D" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\win32\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libopengl32" />
+					<Add library="libglu32" />
+					<Add library="libgdi32" />
+				</Linker>
+			</Target>
+			<Target title="win32 Test">
+				<Option platforms="Windows;" />
+				<Option output="bin\Test\win32\Omeglond3D" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add directory="..\SFML-1.6\include" />
+					<Add directory="..\freetype-2.3.5-1-bin\include" />
+					<Add directory="..\freetype-2.3.5-1-bin\include\freetype2" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsfml-system" />
+					<Add option="-lsfml-window" />
+					<Add library="libopengl32" />
+					<Add library="libglu32" />
+					<Add library="libgdi32" />
+					<Add library="..\freetype-2.3.5-1-bin\lib\libfreetype.dll.a" />
+					<Add directory="..\SFML-1.6\lib" />
+					<Add directory="..\freetype-2.3.5-1-bin\lib" />
+				</Linker>
+			</Target>
+			<Target title="win32 Debug lib">
+				<Option platforms="Windows;" />
+				<Option output="bin\Debug\win32\libOmeglond3D-d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Debug\win32\" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="win32 Release lib">
+				<Option platforms="Windows;" />
+				<Option output="bin\Release\win32\libOmeglond3D" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Release\win32\" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-rdynamic" />
+		</Linker>
+		<Unit filename="CAnimatedModelDemo.hpp">
+			<Option target="Linux Test" />
+			<Option target="win32 Test" />
+		</Unit>
+		<Unit filename="CParallaxDemo.cpp">
+			<Option target="Linux Test" />
+			<Option target="win32 Test" />
+		</Unit>
+		<Unit filename="CParallaxDemo.hpp">
+			<Option target="Linux Test" />
+			<Option target="win32 Test" />
+		</Unit>
+		<Unit filename="CShadowAreaDemo.hpp">
+			<Option target="Linux Test" />
+			<Option target="win32 Test" />
+		</Unit>
+		<Unit filename="CTestScene.cpp">
+			<Option target="Linux Debug" />
+			<Option target="Linux Release" />
+			<Option target="Linux Test" />
+			<Option target="win32 Debug" />
+			<Option target="win32 Test" />
+			<Option target="win32 Debug lib" />
+			<Option target="win32 Release lib" />
+		</Unit>
+		<Unit filename="CTestScene.hpp">
+			<Option target="Linux Debug" />
+			<Option target="Linux Release" />
+			<Option target="Linux Test" />
+			<Option target="win32 Debug" />
+			<Option target="win32 Test" />
+			<Option target="win32 Debug lib" />
+			<Option target="win32 Release lib" />
+		</Unit>
+		<Unit filename="CTowerDemo.cpp">
+			<Option target="Linux Test" />
+			<Option target="win32 Test" />
+		</Unit>
+		<Unit filename="CTowerDemo.hpp">
+			<Option target="Linux Test" />
+			<Option target="win32 Test" />
+		</Unit>
+		<Unit filename="IDemo.hpp">
+			<Option target="Linux Test" />
+			<Option target="win32 Test" />
+		</Unit>
+		<Unit filename="main.cpp">
+			<Option target="Linux Release" />
+			<Option target="Linux Test" />
+			<Option target="win32 Debug" />
+			<Option target="win32 Test" />
+			<Option target="win32 Debug lib" />
+			<Option target="win32 Release lib" />
+		</Unit>
+		<Unit filename="src\Core\CBufferBase.cpp" />
+		<Unit filename="src\Core\CBufferBase.hpp" />
+		<Unit filename="src\Core\CColor.cpp" />
+		<Unit filename="src\Core\CColor.hpp" />
+		<Unit filename="src\Core\CCubeMap.cpp" />
+		<Unit filename="src\Core\CCubeMap.hpp" />
+		<Unit filename="src\Core\CDeclaration.cpp" />
+		<Unit filename="src\Core\CDeclaration.hpp" />
+		<Unit filename="src\Core\CDevice.cpp" />
+		<Unit filename="src\Core\CDevice.hpp" />
+		<Unit filename="src\Core\CFrameBufferRender.cpp" />
+		<Unit filename="src\Core\CFrameBufferRender.hpp" />
+		<Unit filename="src\Core\CLight.cpp" />
+		<Unit filename="src\Core\CLight.hpp" />
+		<Unit filename="src\Core\CMediaManager.cpp" />
+		<Unit filename="src\Core\CMediaManager.hpp" />
+		<Unit filename="src\Core\CMesh.cpp" />
+		<Unit filename="src\Core\CMesh.hpp" />
+		<Unit filename="src\Core\CPicture.cpp" />
+		<Unit filename="src\Core\CPicture.hpp" />
+		<Unit filename="src\Core\CResource.cpp" />
+		<Unit filename="src\Core\CResource.hpp" />
+		<Unit filename="src\Core\CResourceManager.cpp" />
+		<Unit filename="src\Core\CResourceManager.hpp" />
+		<Unit filename="src\Core\CShader.cpp" />
+		<Unit filename="src\Core\CShader.hpp" />
+		<Unit filename="src\Core\CShaderBase.cpp" />
+		<Unit filename="src\Core\CShaderBase.hpp" />
+		<Unit filename="src\Core\CTexture.cpp" />
+		<Unit filename="src\Core\CTexture.hpp" />
+		<Unit filename="src\Core\CVideoDriver.cpp" />
+		<Unit filename="src\Core\CVideoDriver.hpp" />
+		<Unit filename="src\Core\ECoreEnum.hpp" />
+		<Unit filename="src\Core\IBufferBase.hpp" />
+		<Unit filename="src\Core\IColorBuffer.hpp" />
+		<Unit filename="src\Core\ICubeMap.hpp" />
+		<Unit filename="src\Core\IDeclaration.hpp" />
+		<Unit filename="src\Core\IDepthBuffer.hpp" />
+		<Unit filename="src\Core\IFrameBuffer.hpp" />
+		<Unit filename="src\Core\IFrameBufferRender.hpp" />
+		<Unit filename="src\Core\ILight.hpp" />
+		<Unit filename="src\Core\IMesh.hpp" />
+		<Unit filename="src\Core\IResource.hpp" />
+		<Unit filename="src\Core\IShader.hpp" />
+		<Unit filename="src\Core\IShaderBase.hpp" />
+		<Unit filename="src\Core\ITexture.hpp" />
+		<Unit filename="src\Core\IVideoDriver.hpp" />
+		<Unit filename="src\Debug\DebugAllocation.hpp" />
+		<Unit filename="src\Debug\MemoryManager.cpp" />
+		<Unit filename="src\Debug\MemoryManager.hpp" />
+		<Unit filename="src\Exception\LoadException.hpp" />
+		<Unit filename="src\Exception\OmglException.cpp" />
+		<Unit filename="src\Exception\OmglException.hpp" />
+		<Unit filename="src\Exception\PointerNullException.hpp" />
+		<Unit filename="src\Exception\ReadException.hpp" />
+		<Unit filename="src\Exception\RenderException.hpp" />
+		<Unit filename="src\Exception\SaveException.hpp" />
+		<Unit filename="src\Exception\WriteException.hpp" />
+		<Unit filename="src\Font\CFont.hpp" />
+		<Unit filename="src\Font\IFont.hpp" />
+		<Unit filename="src\Interface\CButton.cpp" />
+		<Unit filename="src\Interface\CButton.hpp" />
+		<Unit filename="src\Interface\CComponent.cpp" />
+		<Unit filename="src\Interface\CComponent.hpp" />
+		<Unit filename="src\Interface\CFrame.cpp" />
+		<Unit filename="src\Interface\CFrame.hpp" />
+		<Unit filename="src\Interface\CImage.cpp" />
+		<Unit filename="src\Interface\CImage.hpp" />
+		<Unit filename="src\Interface\CInterfaceManager.cpp" />
+		<Unit filename="src\Interface\CInterfaceManager.hpp" />
+		<Unit filename="src\Interface\CLabel.cpp" />
+		<Unit filename="src\Interface\CLabel.hpp" />
+		<Unit filename="src\Interface\IEvent.hpp" />
+		<Unit filename="src\Math\Matrix4.hpp" />
+		<Unit filename="src\Math\Quaternion.hpp" />
+		<Unit filename="src\Math\Vector3.hpp" />
+		<Unit filename="src\Model\CFrameModel.cpp" />
+		<Unit filename="src\Model\CFrameModel.hpp" />
+		<Unit filename="src\Model\CStaticModel.cpp" />
+		<Unit filename="src\Model\CStaticModel.hpp" />
+		<Unit filename="src\Model\IFrameModel.hpp" />
+		<Unit filename="src\Model\IModel.hpp" />
+		<Unit filename="src\Model\IStaticModel.hpp" />
+		<Unit filename="src\Omgl3D.hpp" />
+		<Unit filename="src\Render\Ogl\OGLBlendingParameter.cpp" />
+		<Unit filename="src\Render\Ogl\OGLBlendingParameter.hpp" />
+		<Unit filename="src\Render\Ogl\OGLBufferVertex.cpp" />
+		<Unit filename="src\Render\Ogl\OGLBufferVertex.hpp" />
+		<Unit filename="src\Render\Ogl\OGLBufferVertexObject.hpp" />
+		<Unit filename="src\Render\Ogl\OGLColorBuffer.cpp" />
+		<Unit filename="src\Render\Ogl\OGLColorBuffer.hpp" />
+		<Unit filename="src\Render\Ogl\OGLCubeMap.cpp" />
+		<Unit filename="src\Render\Ogl\OGLCubeMap.hpp" />
+		<Unit filename="src\Render\Ogl\OGLDeclaration.cpp" />
+		<Unit filename="src\Render\Ogl\OGLDeclaration.hpp" />
+		<Unit filename="src\Render\Ogl\OGLDepthBuffer.cpp" />
+		<Unit filename="src\Render\Ogl\OGLDepthBuffer.hpp" />
+		<Unit filename="src\Render\Ogl\OGLDevice.cpp" />
+		<Unit filename="src\Render\Ogl\OGLDevice.hpp" />
+		<Unit filename="src\Render\Ogl\OGLEnumerations.hpp" />
+		<Unit filename="src\Render\Ogl\OGLExtention.cpp" />
+		<Unit filename="src\Render\Ogl\OGLExtention.hpp" />
+		<Unit filename="src\Render\Ogl\OGLFontSystem.cpp" />
+		<Unit filename="src\Render\Ogl\OGLFontSystem.hpp" />
+		<Unit filename="src\Render\Ogl\OGLFrameBufferObject.cpp" />
+		<Unit filename="src\Render\Ogl\OGLFrameBufferObject.hpp" />
+		<Unit filename="src\Render\Ogl\OGLLight.cpp" />
+		<Unit filename="src\Render\Ogl\OGLLight.hpp" />
+		<Unit filename="src\Render\Ogl\OGLMeshDirectMode.cpp" />
+		<Unit filename="src\Render\Ogl\OGLMeshDirectMode.hpp" />
+		<Unit filename="src\Render\Ogl\OGLMeshVertexArray.cpp" />
+		<Unit filename="src\Render\Ogl\OGLMeshVertexArray.hpp" />
+		<Unit filename="src\Render\Ogl\OGLMeshVertexBufferObject.cpp" />
+		<Unit filename="src\Render\Ogl\OGLMeshVertexBufferObject.hpp" />
+		<Unit filename="src\Render\Ogl\OGLShaderBaseGLSL.cpp" />
+		<Unit filename="src\Render\Ogl\OGLShaderBaseGLSL.hpp" />
+		<Unit filename="src\Render\Ogl\OGLShaderGLSL.cpp" />
+		<Unit filename="src\Render\Ogl\OGLShaderGLSL.hpp" />
+		<Unit filename="src\Render\Ogl\OGLTexture.cpp" />
+		<Unit filename="src\Render\Ogl\OGLTexture.hpp" />
+		<Unit filename="src\Render\Ogl\OGLVideoDriver.cpp" />
+		<Unit filename="src\Render\Ogl\OGLVideoDriver.hpp" />
+		<Unit filename="src\Scene\CCameraNode.cpp" />
+		<Unit filename="src\Scene\CCameraNode.hpp" />
+		<Unit filename="src\Scene\CModelNode.cpp" />
+		<Unit filename="src\Scene\CModelNode.hpp" />
+		<Unit filename="src\Scene\CNode.cpp" />
+		<Unit filename="src\Scene\CNode.hpp" />
+		<Unit filename="src\Scene\CScene.cpp" />
+		<Unit filename="src\Scene\CScene.hpp" />
+		<Unit filename="src\Scene\CSceneNodeManager.hpp" />
+		<Unit filename="src\Scene\CStaticModelNode.cpp" />
+		<Unit filename="src\Scene\CStaticModelNode.hpp" />
+		<Unit filename="src\Utils\Export.hpp" />
+		<Unit filename="src\Utils\Loader\CBufferOperation.cpp" />
+		<Unit filename="src\Utils\Loader\CBufferOperation.hpp" />
+		<Unit filename="src\Utils\Loader\ILoader.hpp" />
+		<Unit filename="src\Utils\Loader\Model\CObjLoader.cpp" />
+		<Unit filename="src\Utils\Loader\Model\CObjLoader.hpp" />
+		<Unit filename="src\Utils\Loader\Picture\BmpLoader.cpp" />
+		<Unit filename="src\Utils\Loader\Picture\BmpLoader.hpp" />
+		<Unit filename="src\Utils\Loader\Picture\FontLoader.cpp" />
+		<Unit filename="src\Utils\Loader\Picture\FontLoader.hpp" />
+		<Unit filename="src\Utils\Loader\Picture\TgaLoader.cpp" />
+		<Unit filename="src\Utils\Loader\Picture\TgaLoader.hpp" />
+		<Unit filename="src\Utils\Loader\Shader\CShaderLoader.cpp" />
+		<Unit filename="src\Utils\Loader\Shader\CShaderLoader.hpp" />
+		<Unit filename="src\Utils\Logger\CLoggerDebug.cpp" />
+		<Unit filename="src\Utils\Logger\CLoggerDebug.hpp" />
+		<Unit filename="src\Utils\Logger\CLoggerFile.cpp" />
+		<Unit filename="src\Utils\Logger\CLoggerFile.hpp" />
+		<Unit filename="src\Utils\Logger\ILogger.cpp" />
+		<Unit filename="src\Utils\Logger\ILogger.hpp" />
+		<Unit filename="src\Utils\Pattern\GenHierarchy.hpp" />
+		<Unit filename="src\Utils\Pattern\Singleton.hpp" />
+		<Unit filename="src\Utils\Plugin\CPlugin.cpp" />
+		<Unit filename="src\Utils\Plugin\CPlugin.hpp" />
+		<Unit filename="src\Utils\Prefab\CCube.cpp" />
+		<Unit filename="src\Utils\Prefab\CCube.hpp" />
+		<Unit filename="src\Utils\Prefab\CSquare.cpp" />
+		<Unit filename="src\Utils\Prefab\CSquare.hpp" />
+		<Unit filename="src\Utils\Ptr\PolicyPtr.hpp" />
+		<Unit filename="src\Utils\Ptr\PolicyPtr.tpp" />
+		<Unit filename="src\Utils\Ptr\SmartPtr.hpp" />
+		<Unit filename="src\Utils\Ptr\SmartPtr.tpp" />
+		<Unit filename="src\Utils\Reader\CBuffer.cpp" />
+		<Unit filename="src\Utils\Reader\CBuffer.hpp" />
+		<Unit filename="src\Utils\Reader\CFile.cpp" />
+		<Unit filename="src\Utils\Reader\CFile.hpp" />
+		<Unit filename="src\Utils\Reader\CFileReader.cpp" />
+		<Unit filename="src\Utils\Reader\CFileReader.hpp" />
+		<Unit filename="src\Utils\Reader\IReader.hpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

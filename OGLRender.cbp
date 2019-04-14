@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OGLRender" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux Debug">
+				<Option platforms="Unix;" />
+				<Option output="bin\Debug\linux\libOGLRender-d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\linux\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="GLU" />
+				</Linker>
+			</Target>
+			<Target title="Linux Release">
+				<Option platforms="Unix;" />
+				<Option output="bin\Release\linux\libOGLRender" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\linux\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="GL" />
+					<Add library="GLU" />
+				</Linker>
+			</Target>
+			<Target title="win32 Debug">
+				<Option platforms="Windows;" />
+				<Option output="bin\Debug\win32\OGLRender-d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\win32\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="bin\Debug\win32\libOmeglond3D-d.a" />
+					<Add library="gdi32" />
+				</Linker>
+			</Target>
+			<Target title="win32 Release">
+				<Option platforms="Windows;" />
+				<Option output="bin\Release\win32\OGLRender" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\win32\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="bin\Release\win32\libOmeglond3D.a" />
+					<Add library="gdi32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-shared" />
+		</Linker>
+		<Unit filename="src\Render\Ogl\OGLBlendingParameter.cpp" />
+		<Unit filename="src\Render\Ogl\OGLBlendingParameter.hpp" />
+		<Unit filename="src\Render\Ogl\OGLBufferVertex.cpp" />
+		<Unit filename="src\Render\Ogl\OGLBufferVertex.hpp" />
+		<Unit filename="src\Render\Ogl\OGLBufferVertexObject.hpp" />
+		<Unit filename="src\Render\Ogl\OGLColorBuffer.cpp" />
+		<Unit filename="src\Render\Ogl\OGLColorBuffer.hpp" />
+		<Unit filename="src\Render\Ogl\OGLCubeMap.cpp" />
+		<Unit filename="src\Render\Ogl\OGLCubeMap.hpp" />
+		<Unit filename="src\Render\Ogl\OGLDeclaration.cpp" />
+		<Unit filename="src\Render\Ogl\OGLDeclaration.hpp" />
+		<Unit filename="src\Render\Ogl\OGLDepthBuffer.cpp" />
+		<Unit filename="src\Render\Ogl\OGLDepthBuffer.hpp" />
+		<Unit filename="src\Render\Ogl\OGLDevice.cpp" />
+		<Unit filename="src\Render\Ogl\OGLDevice.hpp" />
+		<Unit filename="src\Render\Ogl\OGLEnumerations.hpp" />
+		<Unit filename="src\Render\Ogl\OGLExtention.cpp" />
+		<Unit filename="src\Render\Ogl\OGLExtention.hpp" />
+		<Unit filename="src\Render\Ogl\OGLFontSystem.cpp" />
+		<Unit filename="src\Render\Ogl\OGLFontSystem.hpp" />
+		<Unit filename="src\Render\Ogl\OGLFrameBufferObject.cpp" />
+		<Unit filename="src\Render\Ogl\OGLFrameBufferObject.hpp" />
+		<Unit filename="src\Render\Ogl\OGLLight.cpp" />
+		<Unit filename="src\Render\Ogl\OGLLight.hpp" />
+		<Unit filename="src\Render\Ogl\OGLMeshDirectMode.cpp" />
+		<Unit filename="src\Render\Ogl\OGLMeshDirectMode.hpp" />
+		<Unit filename="src\Render\Ogl\OGLMeshVertexArray.cpp" />
+		<Unit filename="src\Render\Ogl\OGLMeshVertexArray.hpp" />
+		<Unit filename="src\Render\Ogl\OGLMeshVertexBufferObject.cpp" />
+		<Unit filename="src\Render\Ogl\OGLMeshVertexBufferObject.hpp" />
+		<Unit filename="src\Render\Ogl\OGLShaderBaseGLSL.cpp" />
+		<Unit filename="src\Render\Ogl\OGLShaderBaseGLSL.hpp" />
+		<Unit filename="src\Render\Ogl\OGLShaderGLSL.cpp" />
+		<Unit filename="src\Render\Ogl\OGLShaderGLSL.hpp" />
+		<Unit filename="src\Render\Ogl\OGLTexture.cpp" />
+		<Unit filename="src\Render\Ogl\OGLTexture.hpp" />
+		<Unit filename="src\Render\Ogl\OGLVideoDriver.cpp" />
+		<Unit filename="src\Render\Ogl\OGLVideoDriver.hpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
